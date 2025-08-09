@@ -19,7 +19,7 @@
      <div class="mb-3">
         <label for="" class="form-label">Description</label>
         <textarea class="form-control" name="description" rows="3">{{$product->description}}</textarea>
-    </div>
+    </div>sad
      <div class="mb-3">
         <label for="" class="form-label">Image</label> <br>
         <img src="{{ asset('storage/uploads/' . $product->image) }}" width="100px" alt="">
