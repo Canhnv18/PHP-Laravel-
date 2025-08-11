@@ -4,9 +4,15 @@ namespace App\Providers;
 
 use Illuminate\Support\ServiceProvider;
 use Illuminate\Pagination\Paginator;
+use Illuminate\Support\Facades\Route;
+
+Route::middleware('api')
+    ->prefix('api')
+    ->group(base_path('routes/api.php'));
 
 class AppServiceProvider extends ServiceProvider
 {
+
     /**
      * Register any application services.
      */
