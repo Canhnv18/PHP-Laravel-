@@ -37,7 +37,7 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav justify-content-center mx-auto mb-2 mb-lg-0" style="width: 100%;">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="{{ url('/') }}">Home</a>
+                <a class="nav-link active" aria-current="page" href="{{ url('admin/products') }}">Home</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#">About</a>
@@ -87,7 +87,7 @@
   <!-- Copyright -->
   <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.05);">
     © 2020 Copyright:
-    <a class="text-body" href="https://mdbootstrap.com/">MDBootstrap.com</a>
+    <a class="text-body" href="https://mdbootstrap.com/">ninhvancanh18.com</a>
   </div>
   <!-- Copyright -->
 </footer>

@@ -60,9 +60,15 @@ class ProductController extends Controller
     /**
      * Display the specified resource.
      */
-    public function show(string $id)
+    public function show(Product $product)
     {
         //
+        $relatedProducts = Product::where('brand_id', $product->brand_id)
+            ->where('id', '!=', $product->id)
+            ->inRandomOrder()
+            ->limit(5)
+            ->get();
+        return view('admin.products.show', compact('product', 'relatedProducts'));
     }
 
     /**
